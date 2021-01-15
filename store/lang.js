@@ -3,8 +3,6 @@ export const state = () => ({
   eng: true,
 })
 
-// change state from here
-
 export const mutations = {
   toggleLang(state) {
     state.ru = !state.ru
@@ -12,7 +10,6 @@ export const mutations = {
   },
 }
 
-// get data about my state
 export const getters = {
   getRu(state) {
     return state.ru

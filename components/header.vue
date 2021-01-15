@@ -1,21 +1,39 @@
 <template>
   <header class="header">
-    <div class="header__line"></div>
-    <content-box class="header__headings">
-      <img
-        @click="changeLang"
-        src="/gb.jpg"
-        alt="English"
-        class="header__lang"
-        :class="{ active: eng }"
-      />
-      <img
-        @click="changeLang"
-        src="/ru.jpg"
-        alt="Russian"
-        class="header__lang"
-        :class="{ active: ru }"
-      />
+    <content-box class="header__content">
+      <a
+        href="https://github.com/anton-zm"
+        target="_blanc"
+        class="header__icons"
+      >
+        <img src="/gh.png" alt="GitHub" class="icon" />
+      </a>
+      <nav class="header__menu">
+        <a
+          @click="scroll(link.to)"
+          v-for="link in menu"
+          :key="link.name"
+          href="#"
+          class="menu__link"
+          >{{ link.name }}</a
+        >
+      </nav>
+      <div class="header__langs">
+        <img
+          @click="changeLang"
+          src="/gb.jpg"
+          alt="English"
+          class="header__lang"
+          :class="{ active: eng }"
+        />
+        <img
+          @click="changeLang"
+          src="/ru.jpg"
+          alt="Russian"
+          class="header__lang"
+          :class="{ active: ru }"
+        />
+      </div>
     </content-box>
   </header>
 </template>
@@ -30,6 +48,10 @@ export default {
     changeLang() {
       this.$store.commit('lang/toggleLang')
     },
+    scroll(id) {
+      const path = document.querySelector(`#${id}`)
+      path.scrollIntoView({ behavior: 'smooth' })
+    },
   },
   computed: {
     ru() {
@@ -38,6 +60,27 @@ export default {
     eng() {
       return this.$store.getters['lang/getEng']
     },
+    menu() {
+      if (this.ru) {
+        return this.ruMenu
+      } else {
+        return this.engMenu
+      }
+    },
+  },
+  data() {
+    return {
+      ruMenu: [
+        { name: 'Проекты', to: 'projects' },
+        { name: 'Контакты', to: 'contacts' },
+        { name: 'Сертификаты', to: 'certificates' },
+      ],
+      engMenu: [
+        { name: 'Projects', to: 'projects' },
+        { name: 'Contacts', to: 'contacts' },
+        { name: 'Certificates', to: 'certificates' },
+      ],
+    }
   },
 }
 </script>
@@ -48,67 +91,54 @@ export default {
   min-height: 80px;
   background-color: transparent;
   border-bottom: 1px solid whitesmoke;
+  padding: 20px 0;
 }
 .active {
-  border: 2px solid white;
+  opacity: 1;
+  position: relative;
+  z-index: 2;
+  box-shadow: 3px 0 15px, -3px 0 15px;
 }
-/* .header__line {
-  width: 100%;
-  opacity: 0.5;
-  border: 1px solid #a1a1a1;
-  transform: translateY(-2px);
-}
-.header__headings {
+
+.header__content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  min-height: 80vh;
 }
-.header__title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
-  margin: 0 auto;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+.header__icons {
+  display: block;
+  width: 30px;
 }
-.header__subtitle {
-  font-weight: 200;
-  font-size: 48px;
-  line-height: 64px;
-  text-align: center;
-  color: #ffffff;
-  width: 75%;
-  margin: 20px auto 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
+.icon {
+  width: 100%;
 }
-.header__title_under {
-  font-size: 12px;
+.header__menu {
 }
-@media (max-width: 768px) {
-  .header {
-    min-height: 70vh;
-  }
-  .header__line {
-    display: none;
-  }
-  .header__title {
-    font-size: 12px;
-  }
-  .header__title_under {
-    font-size: 10px;
-  }
-  .header__subtitle {
-    font-size: 32px;
-  }
+.menu__link {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+  letter-spacing: 1px;
 }
-@media (max-width: 425px) {
-  .header__subtitle {
-    font-size: 24px;
-  }
-} */
+.menu__link:hover {
+  opacity: 0.7;
+}
+.header__langs {
+  display: flex;
+  flex-direction: row;
+}
+.header__lang {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.header__lang:last-of-type {
+  transform: translateX(-10px);
+  position: relative;
+  z-index: 1;
+}
 </style>

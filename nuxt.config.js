@@ -58,7 +58,10 @@ export default {
         content: 'Anton Zmanovski. Frontend Web Developer',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.png' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon.png' },
+      { rel: 'stylesheet', href: '/fonts/fonts.css' },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

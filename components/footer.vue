@@ -1,5 +1,6 @@
 <template>
   <footer class="footer">
+    <div class="contacts" id="contacts"></div>
     <content-box class="footer__content">
       <div class="footer__copyright" id="copyright"></div>
     </content-box>
