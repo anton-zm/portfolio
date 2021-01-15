@@ -38,8 +38,8 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-.page {
-  background-image: url(../static/a100bg.png);
+body {
+  background-image: url(../static/bg.jpg);
   background-attachment: fixed;
 }
 @media screen and (max-width: 768px) {

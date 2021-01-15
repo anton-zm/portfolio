@@ -4,14 +4,15 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Жилой дом "Романовъ"',
+    title: 'WEB Portfolio | Anton Zmanovski"',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Жилой дом "Романовъ", Волгоград ул.Ангарская 100а',
+        content:
+          'Frontend Web Developer. Java Script, HTML, CSS, Webpack, Nuxt.js, Express.js, Git',
       },
       {
         hid: 'og:title',
@@ -21,22 +22,23 @@ export default {
       {
         hid: 'og:description',
         property: 'og:description',
-        content: 'Жилой дом "Романовъ", Волгоград ул.Ангарская 100а',
+        content:
+          'Frontend Web Developer. Java Script, HTML, CSS, Webpack, Nuxt.js, Express.js, Git',
       },
       {
         hid: 'og:site_name',
         property: 'og:site_name',
-        content: 'Жилой дом "Романовъ" Волгоград',
+        content: 'Anton Zmanovski. Frontend Web Developer',
       },
       {
         hid: 'og:url',
         property: 'og:url',
-        content: `http://a100a.ru`,
+        content: `http://antonzm.ru`,
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'a100.jpg',
+        content: 'favicon.png',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
       {
@@ -47,15 +49,16 @@ export default {
       {
         hid: 'twitter:description',
         name: 'twitter:description',
-        content: 'Жилой дом "Романовъ", Волгоград ул.Ангарская 100а',
+        content:
+          'Frontend Web Developer. Java Script, HTML, CSS, Webpack, Nuxt.js, Express.js, Git',
       },
       {
         hid: 'twitter:title',
         name: 'twitter:title',
-        content: 'Жилой дом "Романовъ"',
+        content: 'Anton Zmanovski. Frontend Web Developer',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/romanoff_fav.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.png' }],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)

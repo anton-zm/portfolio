@@ -1,14 +1,6 @@
 <template>
   <footer class="footer">
     <content-box class="footer__content">
-      <p class="footer__address">400081 г.Волгоград ул.Ангарская 100а</p>
-      <div class="footer__line"></div>
-      <img
-        src="../static/a100.jpg"
-        alt="Логотип ЖД Романовъ"
-        class="footer__logo"
-      />
-      <div class="footer__line"></div>
       <div class="footer__copyright" id="copyright"></div>
     </content-box>
   </footer>
@@ -27,14 +19,14 @@ export default {
   },
   mounted() {
     const copyright = document.querySelector('#copyright')
-    copyright.innerHTML = `2017 - ${new Date().getFullYear()}`
+    copyright.innerHTML = `2019 - ${new Date().getFullYear()}`
   },
 }
 </script>
 
 <style scoped>
 .footer {
-  color: #631616;
+  color: #cac7c7;
   margin: 60px 0 0;
   padding-bottom: 48px;
 }

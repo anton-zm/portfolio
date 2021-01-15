@@ -1,22 +1,43 @@
 <template>
   <header class="header">
-    <header-menu />
     <div class="header__line"></div>
     <content-box class="header__headings">
-      <h1 class="header__title">Волгоград Ангарская 100а</h1>
-      <p class="header__subtitle">романовЪ</p>
-      <p class="header__title header__title_under">жилой дом</p>
+      <img
+        @click="changeLang"
+        src="/gb.jpg"
+        alt="English"
+        class="header__lang"
+        :class="{ active: eng }"
+      />
+      <img
+        @click="changeLang"
+        src="/ru.jpg"
+        alt="Russian"
+        class="header__lang"
+        :class="{ active: ru }"
+      />
     </content-box>
   </header>
 </template>
 
 <script>
-import Menu from '@/components/menu'
 import Content from '@/components/content'
 export default {
   components: {
-    'header-menu': Menu,
     'content-box': Content,
+  },
+  methods: {
+    changeLang() {
+      this.$store.commit('lang/toggleLang')
+    },
+  },
+  computed: {
+    ru() {
+      return this.$store.getters['lang/getRu']
+    },
+    eng() {
+      return this.$store.getters['lang/getEng']
+    },
   },
 }
 </script>
@@ -24,13 +45,14 @@ export default {
 <style scoped>
 .header {
   width: 100%;
-  min-height: 100vh;
-  background-image: url(../static/lobby.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  min-height: 80px;
+  background-color: transparent;
+  border-bottom: 1px solid whitesmoke;
 }
-.header__line {
+.active {
+  border: 2px solid white;
+}
+/* .header__line {
   width: 100%;
   opacity: 0.5;
   border: 1px solid #a1a1a1;
@@ -88,5 +110,5 @@ export default {
   .header__subtitle {
     font-size: 24px;
   }
-}
+} */
 </style>
