@@ -89,6 +89,6 @@ export default {
   font-weight: bold;
   font-size: 55px;
   transform: rotate(-15deg);
-  opacity: 0.1;
+  opacity: 0.08;
 }
 </style>
