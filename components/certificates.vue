@@ -4,27 +4,30 @@
       <ContentTitle :title="title" />
       <div class="certificates__container">
         <img
-          :src="cert1"
+          @click="openPopup(item)"
+          v-for="item in certificates"
+          :key="item"
+          :src="item"
           alt="YandexPractikum Certificate"
-          class="certificates__item"
-        />
-        <img
-          :src="cert2"
-          alt="YandexPraktikum Certificate"
           class="certificates__item"
         />
       </div>
     </content-box>
+    <Popup v-if="popup" @closePopup="togglePopup"
+      ><img :src="popupImg" class="popupImg"
+    /></Popup>
   </section>
 </template>
 
 <script>
 import Content from '@/components/content'
 import ContentTitle from '@/components/content-title'
+import Popup from '@/components/popup'
 export default {
   components: {
     'content-box': Content,
     ContentTitle,
+    Popup,
   },
   computed: {
     ru() {
@@ -40,29 +43,28 @@ export default {
         return this.titleEng
       }
     },
-    cert1() {
-      if (this.ru) {
-        return this.cert1Ru
-      } else {
-        return this.cert1Eng
-      }
+  },
+  methods: {
+    openPopup(img) {
+      this.popupImg = img
+      this.togglePopup()
     },
-    cert2() {
-      if (this.ru) {
-        return this.cert2Ru
-      } else {
-        return this.cert2Eng
-      }
+    togglePopup() {
+      this.popup = !this.popup
     },
   },
   data() {
     return {
       titleRu: 'Сертификаты',
       titleEng: 'Certificates',
-      cert1Ru: '/cert1_ru.jpg',
-      cert1Eng: '/cert1_eng.jpg',
-      cert2Ru: '/cert2_ru.jpg',
-      cert2Eng: '/cert2_eng.jpg',
+      certificates: [
+        '/cert1_eng.jpg',
+        '/cert2_eng.jpg',
+        '/cert1_ru.jpg',
+        '/cert2_ru.jpg',
+      ],
+      popupImg: ``,
+      popup: false,
     }
   },
 }
@@ -79,14 +81,18 @@ export default {
   align-items: center;
 }
 .certificates__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  gap: 24px;
   margin-top: 32px;
 }
 .certificates__item {
-  width: calc(100% / 4);
-  margin-right: 24px;
   cursor: pointer;
+  width: 100%;
+}
+.popupImg {
+  width: 100%;
+  max-height: 90vh;
 }
 </style>
