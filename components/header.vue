@@ -5,6 +5,7 @@
         href="https://github.com/anton-zm"
         target="_blanc"
         class="header__icons"
+        title="My GitHub"
       >
         <img src="/gh.png" alt="GitHub" class="icon" />
       </a>

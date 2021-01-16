@@ -7,7 +7,7 @@ export default {
   props: {
     title: String,
   },
-};
+}
 </script>
 
 <style scoped>
@@ -18,7 +18,7 @@ export default {
   position: relative;
   display: inline;
   padding-bottom: 10px;
-  color: #635e5e;
+  color: #ffffff;
 }
 .content-title::after {
   content: '';
@@ -28,7 +28,7 @@ export default {
   transform: translate(-50%);
   width: 80%;
   height: 1px;
-  background-color: #635e5e;
+  background-color: #ffffff;
 }
 @media screen and (max-width: 768px) {
   .content-title {

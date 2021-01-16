@@ -1,10 +1,15 @@
 <template>
-  <main></main>
+  <main>
+    <Certificates />
+  </main>
 </template>
 
 <script>
+import Certificates from '@/components/certificates'
 export default {
-  components: {},
+  components: {
+    Certificates,
+  },
   data() {
     return {}
   },
