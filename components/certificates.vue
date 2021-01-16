@@ -93,6 +93,6 @@ export default {
 }
 .popupImg {
   width: 100%;
-  max-height: 90vh;
+  max-height: 85vh;
 }
 </style>

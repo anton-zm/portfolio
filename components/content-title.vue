@@ -13,8 +13,9 @@ export default {
 <style scoped>
 .content-title {
   font-size: 34px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
   text-align: center;
-  font-weight: 100;
+  font-weight: normal;
   position: relative;
   display: inline;
   padding-bottom: 10px;

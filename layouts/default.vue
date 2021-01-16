@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <Nuxt class="page" />
+    <Nuxt />
     <Footer />
     <go-up />
   </div>

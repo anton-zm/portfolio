@@ -50,8 +50,11 @@ export default {
       this.$store.commit('lang/toggleLang')
     },
     scroll(id) {
-      const path = document.querySelector(`#${id}`)
-      path.scrollIntoView({ behavior: 'smooth' })
+      event.preventDefault()
+      const site = document.querySelector(`#${id}`)
+      site.scrollIntoView({
+        behavior: 'smooth',
+      })
     },
   },
   computed: {
