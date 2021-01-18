@@ -1,6 +1,15 @@
 export const state = () => ({
   projectsRu: [
     {
+      title: 'Сайт благотворительного фонда',
+      description:
+        'Командная работа по созданию сайта для благотворительного фонда.',
+      stack: 'Nuxt.js',
+      img: '/projects/cancer.jpg',
+      url: 'https://raklechitsa.ru/',
+      github: 'https://github.com/anton-zm/rak-lechitsa',
+    },
+    {
       title: 'Онлайн калькулятор стоимости',
       description:
         'Онлайн калькулятор для расчета стоимости окон для организации по производству и установке окон и дверей. ',
@@ -68,6 +77,15 @@ export const state = () => ({
     {
       title: 'Вёрстка для ПК',
       description:
+        'Учебная работа для тренировки. Вёрстка для ПК с использованием методологии БЭМ, Flexbox.',
+      stack: 'HTML, CSS',
+      img: '/projects/cars.jpg',
+      url: 'https://anton-zm.github.io/cars-layout/',
+      github: 'https://github.com/anton-zm/cars-layout',
+    },
+    {
+      title: 'Вёрстка для ПК',
+      description:
         'Учебная работа Яндекс.Практикум. Вёрстка для ПК с использованием методологии БЭМ, Flexbox и простых CSS анимаций.',
       stack: 'HTML, CSS',
       img: '/projects/sprint2.jpg',
@@ -80,6 +98,14 @@ export const state = () => ({
 
   // English
   projectsEng: [
+    {
+      title: 'Charity foundation website',
+      description: 'Teamwork to create a website for a charitable foundation.',
+      stack: 'Nuxt.js',
+      img: '/projects/cancer.jpg',
+      url: 'https://raklechitsa.ru/',
+      github: 'https://github.com/anton-zm/rak-lechitsa',
+    },
     {
       title: 'Online cost calculator',
       description:
@@ -144,6 +170,15 @@ export const state = () => ({
       img: '/projects/sprint4.jpg',
       url: 'https://anton-zm.github.io/sprint-4/',
       github: 'https://github.com/anton-zm/sprint-4',
+    },
+    {
+      title: 'Desktop Layout',
+      description:
+        'Educational work for training. Desktop layout using a BEM metodology, Flexbox',
+      stack: 'HTML, CSS',
+      img: '/projects/cars.jpg',
+      url: 'https://anton-zm.github.io/cars-layout/',
+      github: 'https://github.com/anton-zm/cars-layout',
     },
     {
       title: 'Desktop Layout',
