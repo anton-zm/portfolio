@@ -1,7 +1,7 @@
 <template>
   <footer class="footer">
     <content-box class="footer__content">
-      <div class="footer__copyright" id="copyright"></div>
+      <div class="footer__copyright">2019 - {{ year }}</div>
     </content-box>
   </footer>
 </template>
@@ -18,8 +18,7 @@ export default {
     }
   },
   mounted() {
-    const copyright = document.querySelector('#copyright')
-    copyright.innerHTML = `2019 - ${new Date().getFullYear()}`
+    this.year = new Date().getFullYear()
   },
 }
 </script>
@@ -37,21 +36,8 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-.footer__address {
-  font-size: 12px;
-  margin-bottom: 12px;
-}
-.footer__line {
-  width: 100%;
-  height: 1px;
-  background-color: #631616;
-}
-.footer__logo {
-  width: 130px;
-  height: auto;
-  margin: 20px auto;
-}
+
 .footer__copyright {
-  margin: 20px auto 0;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 </style>
