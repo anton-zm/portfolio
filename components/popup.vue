@@ -46,6 +46,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 80%;
 }
 .popup__close {
   position: absolute;
@@ -56,7 +57,6 @@ export default {
 
 @media screen and (max-width: 900px) {
   .popup__form {
-    max-width: 80%;
     margin: auto auto;
   }
 }
