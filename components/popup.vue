@@ -56,12 +56,13 @@ export default {
 
 @media screen and (max-width: 900px) {
   .popup__form {
-    width: 80%;
+    max-width: 80%;
     margin: auto auto;
   }
 }
 @media screen and (max-width: 600px) {
   .popup__form {
+    max-width: 100%;
     width: 100%;
     position: fixed;
     top: 50%;

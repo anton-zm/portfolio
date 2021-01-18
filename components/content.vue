@@ -11,9 +11,9 @@ export default {}
 <style scoped>
 .content {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1180px;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1280px) {
   .content {
     padding: 0 50px;
   }
