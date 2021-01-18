@@ -50,6 +50,7 @@ export default {
       this.togglePopup()
     },
     togglePopup() {
+      document.body.classList.toggle('popup-is-opened')
       this.popup = !this.popup
     },
   },
@@ -94,5 +95,10 @@ export default {
 .popupImg {
   width: 100%;
   max-height: 85vh;
+}
+@media screen and (max-width: 768px) {
+  .certificates__container {
+    gap: 12px;
+  }
 }
 </style>

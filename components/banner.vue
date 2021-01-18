@@ -68,19 +68,17 @@ export default {
 }
 .banner__title {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  font-size: 64px;
+  font-size: 4rem;
   font-weight: 100;
   margin-left: 80px;
 }
 .banner__subtitle {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   text-transform: uppercase;
   margin-left: 80px;
   margin-top: 24px;
   font-weight: 100;
-
-  /* margin: 24px auto auto 40px; */
 }
 .banner__stack {
   position: absolute;
@@ -90,5 +88,11 @@ export default {
   font-size: 55px;
   transform: rotate(-15deg);
   opacity: 0.08;
+}
+@media screen and (max-width: 540px) {
+  .banner__title,
+  .banner__subtitle {
+    margin-left: 0;
+  }
 }
 </style>

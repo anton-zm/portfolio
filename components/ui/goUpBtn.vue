@@ -31,7 +31,6 @@ export default {
 <style scoped>
 .go-up {
   width: 30px;
-
   position: fixed;
   bottom: 40px;
   right: 30px;
@@ -41,8 +40,16 @@ export default {
   justify-content: center;
   align-items: center;
 }
+.up {
+  width: 100%;
+}
 
 .go-up_hidden {
   display: none;
+}
+@media screen and (max-width: 600px) {
+  .go-up {
+    width: 20px;
+  }
 }
 </style>

@@ -149,6 +149,7 @@ export default {
   height: 100%;
 }
 .popupImg {
+  max-width: 35%;
 }
 .popup__info {
   margin-left: 24px;
@@ -188,5 +189,36 @@ export default {
 }
 .popup__button:hover {
   opacity: 0.8;
+}
+@media screen and (max-width: 890px) {
+  .projects__container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  .popup__buttons {
+    flex-direction: column;
+  }
+  .popup__button {
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .popupImg {
+    display: none;
+  }
+  .popup__info {
+    margin-left: 0;
+    max-width: 100%;
+  }
 }
 </style>

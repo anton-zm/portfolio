@@ -117,8 +117,7 @@ export default {
 .icon {
   width: 100%;
 }
-.header__menu {
-}
+
 .menu__link {
   color: white;
   text-decoration: none;
@@ -144,5 +143,15 @@ export default {
   transform: translateX(-10px);
   position: relative;
   z-index: 1;
+}
+@media screen and (max-width: 540px) {
+  .header__menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__link {
+    text-align: center;
+    margin-bottom: 8px;
+  }
 }
 </style>

@@ -16,7 +16,7 @@ export default {
   letter-spacing: 1px;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
   text-align: center;
-  font-weight: normal;
+  font-weight: 100;
   position: relative;
   display: inline;
   padding-bottom: 10px;

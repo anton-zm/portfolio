@@ -45,9 +45,20 @@ export default {
   align-items: center;
   background-color: #ffffff;
   color: rgb(134, 130, 130);
-  font-size: 24px;
+  font-size: 32px;
   opacity: 0.85;
   visibility: hidden;
   text-align: center;
+}
+@media screen and (max-width: 1140px) {
+  .card__title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card__title {
+    font-size: 18px;
+    padding: 10px;
+  }
 }
 </style>
