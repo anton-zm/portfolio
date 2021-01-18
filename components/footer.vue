@@ -29,6 +29,8 @@ export default {
   color: #cac7c7;
   margin: 60px 0 0;
   padding-bottom: 48px;
+  padding-top: 48px;
+  border-top: 1px solid white;
 }
 .footer__content {
   display: flex;
