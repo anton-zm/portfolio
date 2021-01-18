@@ -60,6 +60,7 @@ export default {
       this.togglePopup()
     },
     togglePopup() {
+      document.body.classList.toggle('popup-is-opened')
       this.popup = !this.popup
     },
   },
@@ -155,6 +156,7 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  max-width: 500px;
 }
 .popup__title {
   color: #5f5b5b;
