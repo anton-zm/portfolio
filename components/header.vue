@@ -1,14 +1,25 @@
 <template>
   <header class="header">
     <content-box class="header__content">
-      <a
-        href="https://github.com/anton-zm"
-        target="_blanc"
-        class="header__icons"
-        title="My GitHub"
-      >
-        <img src="/gh.png" alt="GitHub" class="icon" />
-      </a>
+      <div class="header__icons-cont">
+        <a
+          href="https://github.com/anton-zm"
+          target="_blanc"
+          class="header__icons"
+          title="My GitHub"
+        >
+          <img src="/gh.png" alt="GitHub" class="icon" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/anton-zmanovski-1290591bb/"
+          target="_blanc"
+          class="header__icons"
+          title="My LinkedIn"
+        >
+          <img src="/linkedin.jpg" alt="LinkedIn" class="icon" />
+        </a>
+      </div>
+
       <nav class="header__menu">
         <a
           @click="scroll(link.to)"
@@ -110,9 +121,13 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
+.header__icons-cont {
+  display: flex;
+}
 .header__icons {
   display: block;
   width: 30px;
+  margin-right: 15px;
 }
 .icon {
   width: 100%;

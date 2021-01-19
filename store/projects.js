@@ -46,6 +46,22 @@ export const state = () => ({
       github: 'https://github.com/anton-zm/romanov-nuxt',
     },
     {
+      title: 'Тестовое задание',
+      description: 'Тестовое задание по вёрстке и JS',
+      stack: 'Nuxt.js',
+      img: '/projects/test1.jpg',
+      url: 'https://anton-zm.github.io/test-for-mkomov/',
+      github: 'https://github.com/anton-zm/test-for-mkomov',
+    },
+    {
+      title: 'Сайт компании',
+      description: 'Сайт для организации по остеклению балконов и лоджий. ',
+      stack: 'Nuxt.js, Express.js',
+      img: '/projects/balkony.jpg',
+      url: 'https://balkony34.ru',
+      github: 'https://github.com/anton-zm/balkony',
+    },
+    {
       title: 'Портал новостей',
       description:
         'Учебная работа Яндекс.Практикум. Сервис по поиску новостей по запросу с регистрацией и авторизацией пользователей. Пользователь может сохранить понравившиеся статьи в "Избранное".',
@@ -149,6 +165,23 @@ export const state = () => ({
       img: '/projects/a100a.jpg',
       url: 'http://a100a.ru',
       github: 'https://github.com/anton-zm/romanov-nuxt',
+    },
+    {
+      title: 'Test',
+      description: 'Layout and JS test task on Nuxt.js',
+      stack: 'Nuxt.js',
+      img: '/projects/test1.jpg',
+      url: 'https://anton-zm.github.io/test-for-mkomov/',
+      github: 'https://github.com/anton-zm/test-for-mkomov',
+    },
+    {
+      title: 'Website',
+      description:
+        'Website for the organization for the loggia and balcony glazing.',
+      stack: 'Nuxt.js, Express.js',
+      img: '/projects/balkony.jpg',
+      url: 'https://balkony34.ru',
+      github: 'https://github.com/anton-zm/balkony',
     },
     {
       title: 'News Search Service',
