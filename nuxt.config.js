@@ -17,7 +17,7 @@ export default {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Жилой дом "Романовъ"',
+        content: 'Frontend Web Developer',
       },
       {
         hid: 'og:description',
@@ -81,6 +81,17 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/robots',
+    [
+      '@nuxtjs/yandex-metrika',
+      {
+        id: '71309305',
+        webvisor: true,
+        clickmap: true,
+        useCDN: false,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      },
+    ],
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

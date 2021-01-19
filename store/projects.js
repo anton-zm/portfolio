@@ -1,6 +1,14 @@
 export const state = () => ({
   projectsRu: [
     {
+      title: 'Сайт-портфолио',
+      description: 'Сайт портфолио вэб разработчика.',
+      stack: 'Nuxt.js',
+      img: '/projects/this.jpg',
+      url: 'http://antonzm.ru/',
+      github: 'https://github.com/anton-zm/portfolio',
+    },
+    {
       title: 'Сайт благотворительного фонда',
       description:
         'Командная работа по созданию сайта для благотворительного фонда.',
@@ -80,8 +88,8 @@ export const state = () => ({
         'Учебная работа для тренировки. Вёрстка для ПК с использованием методологии БЭМ, Flexbox.',
       stack: 'HTML, CSS',
       img: '/projects/cars.jpg',
-      url: 'https://anton-zm.github.io/cars-layout/',
-      github: 'https://github.com/anton-zm/cars-layout',
+      url: 'https://anton-zm.github.io/training-layout/',
+      github: 'https://github.com/anton-zm/training-layout',
     },
     {
       title: 'Вёрстка для ПК',
@@ -98,6 +106,14 @@ export const state = () => ({
 
   // English
   projectsEng: [
+    {
+      title: 'Web Portfolio',
+      description: "Web developer's website portfolio ",
+      stack: 'Nuxt.js',
+      img: '/projects/this.jpg',
+      url: 'http://antonzm.ru/',
+      github: 'https://github.com/anton-zm/portfolio',
+    },
     {
       title: 'Charity foundation website',
       description: 'Teamwork to create a website for a charitable foundation.',
@@ -177,8 +193,8 @@ export const state = () => ({
         'Educational work for training. Desktop layout using a BEM metodology, Flexbox',
       stack: 'HTML, CSS',
       img: '/projects/cars.jpg',
-      url: 'https://anton-zm.github.io/cars-layout/',
-      github: 'https://github.com/anton-zm/cars-layout',
+      url: 'https://anton-zm.github.io/training-layout/',
+      github: 'https://github.com/anton-zm/training-layout',
     },
     {
       title: 'Desktop Layout',

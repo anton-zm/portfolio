@@ -46,7 +46,8 @@ export default {
   background-color: #ffffff;
   color: rgb(134, 130, 130);
   font-size: 32px;
-  opacity: 0.85;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 100;
   visibility: hidden;
   text-align: center;
 }

@@ -186,6 +186,7 @@ export default {
   background-color: #4438f1;
   border-radius: 5px;
   transition: 0.3s;
+  margin-right: 10px;
 }
 .popup__button:hover {
   opacity: 0.8;
