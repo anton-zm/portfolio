@@ -58,7 +58,9 @@ export default {
   },
   methods: {
     changeLang() {
-      this.$store.commit('lang/toggleLang')
+      if (!event.target.classList.contains('active')) {
+        this.$store.commit('lang/toggleLang')
+      }
     },
     scroll(id) {
       event.preventDefault()
@@ -108,12 +110,6 @@ export default {
   border-bottom: 1px solid whitesmoke;
   padding: 20px 0;
 }
-.active {
-  opacity: 1;
-  position: relative;
-  z-index: 2;
-  box-shadow: 3px 0 15px, -3px 0 15px;
-}
 
 .header__content {
   display: flex;
@@ -158,6 +154,13 @@ export default {
   transform: translateX(-10px);
   position: relative;
   z-index: 1;
+}
+.active {
+  opacity: 1;
+  position: relative;
+  z-index: 2;
+  box-shadow: 3px 0 15px, -3px 0 15px;
+  cursor: default;
 }
 @media screen and (max-width: 540px) {
   .header__menu {
