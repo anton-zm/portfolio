@@ -1,6 +1,15 @@
 export const state = () => ({
   projectsRu: [
     {
+      title: 'Социальная сеть',
+      description:
+        'Учебная работа Яндекс.Практикум по дополнительному курсу React. Социальная сеть, в которой студенты Практикума могут менять свои данные, добавлять и удалять свои картинки, отмечать понравившиеся. Данные хранятся на сервере и добываются при помощи запросов в fetch.',
+      stack: 'React, React App Create, Hooks',
+      img: '/projects/mesto-react.jpg',
+      url: 'https://anton-zm.github.io/mesto-react/',
+      github: 'https://github.com/anton-zm/mesto-react',
+    },
+    {
       title: 'Сайт-портфолио',
       description: 'Сайт портфолио вэб разработчика.',
       stack: 'Nuxt.js',
@@ -9,7 +18,7 @@ export const state = () => ({
       github: 'https://github.com/anton-zm/portfolio',
     },
     {
-      title: 'Сайт благотворительного фонда',
+      title: 'Сайт фонда НКО',
       description:
         'Командная работа по созданию сайта для благотворительного фонда.',
       stack: 'Nuxt.js',
@@ -123,7 +132,16 @@ export const state = () => ({
   // English
   projectsEng: [
     {
-      title: 'Web Portfolio',
+      title: 'Social Network (React)',
+      description:
+        'Educational extra React work in Yandex.Practicum. A social network in which the students of the Practicum can change their data, add and delete their pictures, mark their favorites. The data is stored on the server and retrieved using Fetch API requests.',
+      stack: 'React, React App Create, Hooks',
+      img: '/projects/mesto-react.jpg',
+      url: 'https://anton-zm.github.io/mesto-react/',
+      github: 'https://github.com/anton-zm/mesto-react',
+    },
+    {
+      title: 'This website',
       description: "Web developer's website portfolio ",
       stack: 'Nuxt.js',
       img: '/projects/this.jpg',
