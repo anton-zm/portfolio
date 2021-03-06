@@ -26,9 +26,12 @@
             <a :href="webLink" target="_blanc" class="popup__button">{{
               web
             }}</a>
-            <a :href="gitLink" target="_blanc" class="popup__button">{{
+            <!-- <a :href="gitLink" target="_blanc" class="popup__button" id="gh">{{
               git
-            }}</a>
+            }}</a> -->
+            <button @click="toGitHub" class="popup__button" id="gh">{{
+              git
+            }}</button>
           </div>
         </div>
       </div>
@@ -51,6 +54,7 @@ export default {
   },
   methods: {
     openPopup(item) {
+      this.NDA = false    
       this.popupImg = item.img
       this.popupTitle = item.title
       this.popupDescription = item.description
@@ -58,11 +62,34 @@ export default {
       this.webLink = item.url
       this.gitLink = item.github
       this.togglePopup()
+      setTimeout(()=>{
+        if(item.nda){
+          this.NDA = true
+          this.setNDA();
+      }
+      },1000)
+      
     },
     togglePopup() {
       document.body.classList.toggle('popup-is-opened')
       this.popup = !this.popup
     },
+    setNDA(){
+      const gh = document.querySelector('#gh')
+      gh.addEventListener('mouseover', (event)=>{
+        event.target.textContent = this.gitNDA
+      })
+      gh.addEventListener('mouseout', (event)=>{
+        event.target.textContent = this.git
+      })
+    },
+    toGitHub(event){
+      event.preventDefault();
+      if(!this.NDA){
+        window.open(this.gitLink, '_blank')
+      }
+    }
+    
   },
   computed: {
     ru() {
@@ -85,13 +112,7 @@ export default {
         return this.webEng
       }
     },
-    git() {
-      if (this.ru) {
-        return this.gitRu
-      } else {
-        return this.gitEng
-      }
-    },
+    
     projects() {
       if (this.ru) {
         return this.projectsRu
@@ -115,6 +136,9 @@ export default {
       webEng: 'Watch in browser',
       gitRu: 'Смотреть код на GitHub',
       gitEng: 'Repository on GitHub',
+      gitNDA: 'Sorry, NDA project',
+      NDA: false,
+      git: 'GitHub',
       popupImg: ``,
       popupTitle: '',
       popupDescription: '',
@@ -122,6 +146,7 @@ export default {
       webLink: '',
       gitLink: '',
       popup: false,
+      
     }
   },
 }
@@ -181,12 +206,16 @@ export default {
   display: block;
   text-decoration: none;
   color: white;
+  font-size: 16px;
   text-align: center;
   padding: 10px 24px;
   background-color: #4438f1;
   border-radius: 5px;
   transition: 0.3s;
   margin-right: 10px;
+  outline: none;
+  border:none;
+  cursor: pointer;
 }
 .popup__button:hover {
   opacity: 0.8;

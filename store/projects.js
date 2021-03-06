@@ -8,6 +8,7 @@ export const state = () => ({
       img: '/projects/mesto-react.jpg',
       url: 'https://anton-zm.github.io/mesto-react/',
       github: 'https://github.com/anton-zm/mesto-react',
+      nda: false
     },
     {
       title: 'Сайт-портфолио',
@@ -16,6 +17,7 @@ export const state = () => ({
       img: '/projects/this.jpg',
       url: 'http://antonzm.ru/',
       github: 'https://github.com/anton-zm/portfolio',
+      nda: false
     },
     {
       title: 'Сайт фонда НКО',
@@ -25,6 +27,7 @@ export const state = () => ({
       img: '/projects/cancer.jpg',
       url: 'https://raklechitsa.ru/',
       github: 'https://github.com/anton-zm/rak-lechitsa',
+      nda: false
     },
     {
       title: 'Онлайн калькулятор стоимости',
@@ -35,6 +38,7 @@ export const state = () => ({
       url: 'https://stvorka34.ru/calculation',
       github:
         'https://github.com/anton-zm/stvorka34/blob/main/pages/calculation.vue',
+        nda: true
     },
     {
       title: 'Сайт оконной компании',
@@ -44,6 +48,7 @@ export const state = () => ({
       img: '/projects/stvorka34.jpg',
       url: 'https://stvorka34.ru',
       github: 'https://github.com/anton-zm/stvorka34',
+      nda: true
     },
     {
       title: 'Одностраничный сайт',
@@ -53,6 +58,7 @@ export const state = () => ({
       img: '/projects/a100a.jpg',
       url: 'http://a100a.ru',
       github: 'https://github.com/anton-zm/romanov-nuxt',
+      nda: false
     },
     {
       title: 'Тестовое задание',
@@ -61,6 +67,7 @@ export const state = () => ({
       img: '/projects/test1.jpg',
       url: 'https://anton-zm.github.io/test-for-mkomov/',
       github: 'https://github.com/anton-zm/test-for-mkomov',
+      nda: false
     },
     {
       title: 'Сайт компании',
@@ -69,6 +76,7 @@ export const state = () => ({
       img: '/projects/balkony.jpg',
       url: 'https://balkony34.ru',
       github: 'https://github.com/anton-zm/balkony',
+      nda: false
     },
     {
       title: 'Портал новостей',
@@ -79,6 +87,7 @@ export const state = () => ({
       img: '/projects/newsapi.jpg',
       url: 'https://anton-zm.github.io/news-frontend/',
       github: 'https://github.com/anton-zm/news-frontend',
+      nda: false
     },
     {
       title: 'Социальная сеть',
@@ -88,6 +97,7 @@ export const state = () => ({
       img: '/projects/sprint11.jpg',
       url: 'https://anton-zm.github.io/sprint-11/',
       github: 'https://github.com/anton-zm/sprint-11',
+      nda: false
     },
     {
       title: 'Регулярные выражения',
@@ -97,6 +107,7 @@ export const state = () => ({
       img: '/projects/sprint10.jpg',
       url: 'https://anton-zm.github.io/sprint-10/',
       github: 'https://github.com/anton-zm/sprint-10',
+      nda: false
     },
     {
       title: 'Адаптивная вёрстка',
@@ -106,6 +117,7 @@ export const state = () => ({
       img: '/projects/sprint4.jpg',
       url: 'https://anton-zm.github.io/sprint-4/',
       github: 'https://github.com/anton-zm/sprint-4',
+      nda: false
     },
     {
       title: 'Вёрстка для ПК',
@@ -115,6 +127,7 @@ export const state = () => ({
       img: '/projects/cars.jpg',
       url: 'https://anton-zm.github.io/training-layout/',
       github: 'https://github.com/anton-zm/training-layout',
+      nda: false
     },
     {
       title: 'Вёрстка для ПК',
@@ -124,6 +137,7 @@ export const state = () => ({
       img: '/projects/sprint2.jpg',
       url: 'https://anton-zm.github.io/sprint-2/',
       github: 'https://github.com/anton-zm/sprint-2',
+      nda: false
     },
   ],
 
@@ -139,6 +153,7 @@ export const state = () => ({
       img: '/projects/mesto-react.jpg',
       url: 'https://anton-zm.github.io/mesto-react/',
       github: 'https://github.com/anton-zm/mesto-react',
+      nda: false
     },
     {
       title: 'This website',
@@ -147,6 +162,7 @@ export const state = () => ({
       img: '/projects/this.jpg',
       url: 'http://antonzm.ru/',
       github: 'https://github.com/anton-zm/portfolio',
+      nda: false
     },
     {
       title: 'Charity foundation website',
@@ -155,6 +171,7 @@ export const state = () => ({
       img: '/projects/cancer.jpg',
       url: 'https://raklechitsa.ru/',
       github: 'https://github.com/anton-zm/rak-lechitsa',
+      nda: false
     },
     {
       title: 'Online cost calculator',
@@ -165,6 +182,7 @@ export const state = () => ({
       url: 'https://stvorka34.ru/calculation',
       github:
         'https://github.com/anton-zm/stvorka34/blob/main/pages/calculation.vue',
+        nda: true
     },
     {
       title: 'Windows ann doors company website',
@@ -174,6 +192,7 @@ export const state = () => ({
       img: '/projects/stvorka34.jpg',
       url: 'https://stvorka34.ru',
       github: 'https://github.com/anton-zm/stvorka34',
+      nda: true
     },
     {
       title: 'One-page website',
@@ -183,6 +202,7 @@ export const state = () => ({
       img: '/projects/a100a.jpg',
       url: 'http://a100a.ru',
       github: 'https://github.com/anton-zm/romanov-nuxt',
+      nda: false
     },
     {
       title: 'Test',
@@ -191,6 +211,7 @@ export const state = () => ({
       img: '/projects/test1.jpg',
       url: 'https://anton-zm.github.io/test-for-mkomov/',
       github: 'https://github.com/anton-zm/test-for-mkomov',
+      nda: false
     },
     {
       title: 'Website',
@@ -200,6 +221,7 @@ export const state = () => ({
       img: '/projects/balkony.jpg',
       url: 'https://balkony34.ru',
       github: 'https://github.com/anton-zm/balkony',
+      nda: false
     },
     {
       title: 'News Search Service',
@@ -210,6 +232,7 @@ export const state = () => ({
       img: '/projects/newsapi.jpg',
       url: 'https://anton-zm.github.io/news-frontend/',
       github: 'https://github.com/anton-zm/news-frontend',
+      nda: false
     },
     {
       title: 'Social Network',
@@ -219,6 +242,7 @@ export const state = () => ({
       img: '/projects/sprint11.jpg',
       url: 'https://anton-zm.github.io/mesto-sprint11/',
       github: 'https://github.com/anton-zm//mesto-sprint11/',
+      nda: false
     },
     {
       title: 'Regular Expressions',
@@ -228,6 +252,7 @@ export const state = () => ({
       img: '/projects/sprint10.jpg',
       url: 'https://anton-zm.github.io/sprint-10/',
       github: 'https://github.com/anton-zm/sprint-10',
+      nda: false
     },
     {
       title: 'Adaptive Layout',
@@ -237,6 +262,7 @@ export const state = () => ({
       img: '/projects/sprint4.jpg',
       url: 'https://anton-zm.github.io/sprint-4/',
       github: 'https://github.com/anton-zm/sprint-4',
+      nda: false
     },
     {
       title: 'Desktop Layout',
@@ -246,6 +272,7 @@ export const state = () => ({
       img: '/projects/cars.jpg',
       url: 'https://anton-zm.github.io/training-layout/',
       github: 'https://github.com/anton-zm/training-layout',
+      nda: false
     },
     {
       title: 'Desktop Layout',
@@ -255,6 +282,7 @@ export const state = () => ({
       img: '/projects/sprint2.jpg',
       url: 'https://anton-zm.github.io/sprint-2/',
       github: 'https://github.com/anton-zm/sprint-2',
+      nda: false
     },
   ],
 })
