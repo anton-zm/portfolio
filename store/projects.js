@@ -56,7 +56,7 @@ export const state = () => ({
         'Работа для портфолио. Одностраничный сайт многоквартирного дома.',
       stack: 'Nuxt.js',
       img: '/projects/a100a.jpg',
-      url: 'http://a100a.ru',
+      url: 'https://a100a.netlify.app/',
       github: 'https://github.com/anton-zm/romanov-nuxt',
       nda: false
     },
@@ -67,6 +67,15 @@ export const state = () => ({
       img: '/projects/test1.jpg',
       url: 'https://anton-zm.github.io/test-for-mkomov/',
       github: 'https://github.com/anton-zm/test-for-mkomov',
+      nda: false
+    },
+    {
+      title: 'Тестовое задание',
+      description: 'Тестовое задание по вёрстке и JS',
+      stack: 'Nuxt.js, Swiper Slider',
+      img: '/projects/mailfit.jpg',
+      url: 'https://nervous-goldwasser-71f821.netlify.app/',
+      github: 'https://github.com/anton-zm/test-for-mailfit',
       nda: false
     },
     {
@@ -200,17 +209,26 @@ export const state = () => ({
         'Pet project for portfolio. One-page website for an apartment building.',
       stack: 'Nuxt.js',
       img: '/projects/a100a.jpg',
-      url: 'http://a100a.ru',
+      url: 'https://a100a.netlify.app/',
       github: 'https://github.com/anton-zm/romanov-nuxt',
       nda: false
     },
     {
-      title: 'Test',
+      title: 'Test task',
       description: 'Layout and JS test task on Nuxt.js',
       stack: 'Nuxt.js',
       img: '/projects/test1.jpg',
       url: 'https://anton-zm.github.io/test-for-mkomov/',
       github: 'https://github.com/anton-zm/test-for-mkomov',
+      nda: false
+    },
+    {
+      title: 'Test task',
+      description: 'Layout and JS test task on Nuxt.js',
+      stack: 'Nuxt.js, Swiper Slider',
+      img: '/projects/mailfit.jpg',
+      url: 'https://nervous-goldwasser-71f821.netlify.app/',
+      github: 'https://github.com/anton-zm/test-for-mailfit',
       nda: false
     },
     {
