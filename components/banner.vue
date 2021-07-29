@@ -5,7 +5,8 @@
       <p class="banner__subtitle">{{ subtitle }}</p>
       <p class="banner__stack">
         JavaScript HTML5 CSS3 Vue.js Nuxt.js NPM Webpack Git BEM Grid Flexbox
-        Express.js MongoDB GitHub Figma Node.js Responsive Jest REST API
+        Express.js MongoDB GitHub Figma Node.js Responsive Jest REST API React MobX 
+        React Native Android Studio Styled Components TypeScript Yarn 
       </p>
     </content-box>
   </section>

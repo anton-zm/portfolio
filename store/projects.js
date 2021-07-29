@@ -1,6 +1,26 @@
 export const state = () => ({
   projectsRu: [
     {
+      title: 'Мобильное приложение',
+      description:
+        'Мобильное приложение для прохождения маркетинговых опросов за вознаграждение',
+      stack: 'React Native, Typescript, MobX, Android Studio',
+      img: '/projects/pointx-m.jpg',
+      url: '',
+      github: '',
+      nda: true
+    },
+    {
+      title: 'Личный кабинет',
+      description:
+        'Личный кабинет финансового вэб-приложения',
+      stack: 'React, Typescript, MobX, Styled Components',
+      img: '/projects/pointx.jpg',
+      url: 'https://dash.point-x.co/',
+      github: '',
+      nda: true
+    },
+    {
       title: 'Социальная сеть',
       description:
         'Учебная работа Яндекс.Практикум по дополнительному курсу React. Социальная сеть, в которой студенты Практикума могут менять свои данные, добавлять и удалять свои картинки, отмечать понравившиеся. Данные хранятся на сервере и добываются при помощи запросов в fetch.',
@@ -154,6 +174,26 @@ export const state = () => ({
 
   // English
   projectsEng: [
+    {
+      title: 'Mobile App',
+      description:
+        'Mobile app for passing marketing surveys for a reward',
+      stack: 'React Native, Typescript, MobX, Android Studio',
+      img: '/projects/pointx-m.jpg',
+      url: '/',
+      github: '',
+      nda: true
+    },
+    {
+      title: 'Personal Area',
+      description:
+        'Financial Web App Personal Area ',
+      stack: 'React, Typescript, MobX, Styled Components',
+      img: '/projects/pointx.jpg',
+      url: 'https://dash.point-x.co/',
+      github: '',
+      nda: true
+    },
     {
       title: 'Social Network (React)',
       description:
